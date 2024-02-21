@@ -1,0 +1,145 @@
+VERSION ""
+
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_: 
+BU_: 
+BO_ 792 Steering_Wheel: 8 Vector__XXX
+
+BO_ 133 GearStatus: 8 Vector__XXX
+   SG_ GearPosition : 15|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 139 WheelSpeed: 8 Vector__XXX
+   SG_ WheelSpeed1 : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ WheelSpeed2 : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ WheelSpeed3 : 39|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ WheelSpeed4 : 55|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 122 IgnitionSwitch: 4 Vector__XXX
+   SG_ IgnitionSwitchPos : 15|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1100 Config6: 8 Vector__XXX
+   SG_ Config6 : 7|64@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1098 Config5: 8 Vector__XXX
+   SG_ Config5 : 7|64@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 992 VIN: 8 Vector__XXX
+   SG_ VIN : 15|64@4- (1,0) [0|1] "" Vector__XXX
+   SG_ VIN_MsgNo : 7|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 881 SwayBar: 8 Vector__XXX
+   SG_ SwayBar : 1|2@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 848 DateTime: 8 Vector__XXX
+   SG_ DateTimeSeconds : 7|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ DateTimeMinutes : 15|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ DateTimeHours : 23|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ DateTimeYear : 31|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ DateTimeMonth : 47|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ DateTimeDay : 55|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 808 MusicInfo: 8 Vector__XXX
+
+BO_ 662 TirePressure: 8 Vector__XXX
+   SG_ TirePressureLF : 31|8@0+ (1,0) [0|1] "psi" Vector__XXX
+   SG_ TirePressureRF : 39|8@0+ (1,0) [0|1] "psi" Vector__XXX
+   SG_ TirePressureLR : 47|8@0+ (1,0) [0|1] "psi" Vector__XXX
+   SG_ TirePressureRR : 55|8@0+ (1,0) [0|1] "psi" Vector__XXX
+
+BO_ 295 Temperatures2: 8 Vector__XXX
+   SG_ AmbientPressure : 23|8@0+ (1,0) [0|1] "kPa" Vector__XXX
+   SG_ IAT : 7|8@0+ (1,-40) [0|1] "C" Vector__XXX
+   SG_ ECT : 15|8@0+ (1,-40) [0|1] "C" Vector__XXX
+
+BO_ 2147483795 GearPosition: 8 Vector__XXX
+   SG_ GearPositionSig278 : 23|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147484031 GPSSpeed: 8 Vector__XXX
+   SG_ GPSSpeed : 55|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483683 SteeringWheel: 8 Vector__XXX
+   SG_ SteeringWheelAngle : 7|16@0+ (1,-4096) [0|1] "" Vector__XXX
+   SG_ SteeringWheelTorque : 23|16@0+ (1,-4096) [0|1] "" Vector__XXX
+
+BO_ 2147484556 DateTime2: 8 Vector__XXX
+   SG_ DateTime2Seconds : 63|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483691 Accelerometer: 8 Vector__XXX
+   SG_ Accelerometer1 : 7|16@0+ (1,-2048) [0|1] "" Vector__XXX
+   SG_ Accelerometer2 : 23|16@0+ (1,-2048) [0|1] "" Vector__XXX
+   SG_ Accelerometer3 : 39|16@0+ (1,-2048) [0|1] "" Vector__XXX
+
+BO_ 2147483783 Brake: 8 Vector__XXX
+   SG_ BrakePressure : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483769 Brake2: 8 Vector__XXX
+   SG_ Brake2Pressure1 : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ Brake2Pressure2 : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
+BA_DEF_DEF_ "matchingcriteria" 0;
+BA_DEF_DEF_ "filterlabeling" 1;
+BA_DEF_DEF_ "matchingcriteria" 0;
+BA_DEF_DEF_ "filterlabeling" 0;
+BA_ "GenMsgForegroundColor" BO_ 2147483783 "#000000";
+BA_ "GenMsgForegroundColor" BO_ 2147483769 "#000000";
+VAL_ 881 SwayBar 0 "Disconnected" 1 "Connected" 2 "In_Progress";
