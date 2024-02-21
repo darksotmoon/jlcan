@@ -1,0 +1,111 @@
+VERSION ""
+
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_: 
+BU_: 
+BO_ 706 Aux_Battery: 4 Vector__XXX
+   SG_ Aux_Battery_Voltage : 23|8@0+ (0.1,0) [0|1] "" Vector__XXX
+
+BO_ 792 Steering_Wheel: 8 Vector__XXX
+
+BO_ 826 Cabin_Temp: 8 Vector__XXX
+   SG_ Interior_Temp : 7|16@0+ (0.01,-40) [0|1] "C" Vector__XXX
+
+BO_ 1100 Config6: 8 Vector__XXX
+   SG_ Config6 : 7|64@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1098 Config5: 8 Vector__XXX
+   SG_ Config5 : 7|64@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 992 VIN: 8 Vector__XXX
+   SG_ VIN_MsgNo : 7|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ VIN : 15|56@4- (1,0) [0|1] "" Vector__XXX
+
+BO_ 848 DateTime: 8 Vector__XXX
+   SG_ DateTimeSeconds : 7|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ DateTimeMinutes : 15|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ DateTimeHours : 23|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ DateTimeYear : 31|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ DateTimeMonth : 47|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ DateTimeDay : 55|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 978 Odometer: 4 Vector__XXX
+   SG_ Odometer : 7|24@0+ (0.1,0) [0|1] "km" Vector__XXX
+
+BO_ 832 GearSpeed: 8 Vector__XXX
+   SG_ Gear : 23|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ Gear70 : 31|24@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 810 MeasurementUnits: 8 Vector__XXX
+
+BO_ 808 MusicInfo: 8 Vector__XXX
+   SG_ MusicInfoNewLine : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ MusicInfoLineNum : 7|4@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ MusicInfoText : 23|48@4- (1,0) [0|1] "" Vector__XXX
+   SG_ MusicInfoType : 9|2@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 802 RpmSpeed: 8 Vector__XXX
+   SG_ Speed : 23|16@0+ (0.05,0) [0|1] "" Vector__XXX
+   SG_ Rpm : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 778 Temperatures: 8 Vector__XXX
+   SG_ Temperatures1 : 7|32@2- (1,0) [0|1] "" Vector__XXX
+   SG_ TemperaturesSig37218 : 39|32@2- (1,0) [0|1] "" Vector__XXX
+
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
+BA_DEF_DEF_ "matchingcriteria" 0;
+BA_DEF_DEF_ "filterlabeling" 1;
+BA_DEF_DEF_ "matchingcriteria" 0;
+BA_DEF_DEF_ "filterlabeling" 1;
+BA_ "GenMsgForegroundColor" BO_ 826 "#000000";
+VAL_ 832 Gear 61 "Park" 0 "No Description";
+VAL_ 832 Gear70 61 "Park" 0 "No Description";
