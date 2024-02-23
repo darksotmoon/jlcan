@@ -82,8 +82,12 @@ BO_ 778 Temperatures: 8 Vector__XXX
    SG_ Temperatures1 : 7|32@2- (1,0) [0|1] "" Vector__XXX
    SG_ TemperaturesSig37218 : 39|32@2- (1,0) [0|1] "" Vector__XXX
 
+BO_ 2147484205 SteeringButtons: 8 Vector__XXX
+
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
 BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
