@@ -37,6 +37,7 @@ BO_ 792 Steering_Wheel: 8 Vector__XXX
 
 BO_ 133 GearStatus: 8 Vector__XXX
    SG_ GearPosition : 15|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ GearStatusSpeed : 39|16@0+ (0.5,0) [0|1] "" Vector__XXX
 
 BO_ 139 WheelSpeed: 8 Vector__XXX
    SG_ WheelSpeed1 : 7|16@0+ (1,0) [0|1] "" Vector__XXX
@@ -82,7 +83,7 @@ BO_ 295 Temperatures2: 8 Vector__XXX
    SG_ ECT : 15|8@0+ (1,-40) [0|1] "C" Vector__XXX
 
 BO_ 2147483795 GearPosition: 8 Vector__XXX
-   SG_ GearPositionSig278 : 23|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ GearPositionSig278 : 23|8@4- (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147484031 GPSSpeed: 8 Vector__XXX
    SG_ GPSSpeed : 55|16@0+ (1,0) [0|1] "" Vector__XXX
@@ -95,19 +96,34 @@ BO_ 2147484556 DateTime2: 8 Vector__XXX
    SG_ DateTime2Seconds : 63|8@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147483691 Accelerometer: 8 Vector__XXX
-   SG_ Accelerometer1 : 7|16@0+ (1,-2048) [0|1] "" Vector__XXX
-   SG_ Accelerometer2 : 23|16@0+ (1,-2048) [0|1] "" Vector__XXX
-   SG_ Accelerometer3 : 39|16@0+ (1,-2048) [0|1] "" Vector__XXX
+   SG_ AccelerationLong : 7|16@0+ (1,-2048) [0|1] "" Vector__XXX
+   SG_ AccelerationLat : 23|16@0+ (1,-2048) [0|1] "" Vector__XXX
+   SG_ YawRate : 39|16@0+ (1,-2048) [0|1] "" Vector__XXX
 
 BO_ 2147483783 Brake: 8 Vector__XXX
    SG_ BrakePressure : 7|16@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147483769 Brake2: 8 Vector__XXX
-   SG_ Brake2Pressure1 : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ Brake2Pressure1 : 6|15@0+ (1,0) [0|1] "" Vector__XXX
    SG_ Brake2Pressure2 : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ Brake2VehicleStopped : 7|1@0+ (1,0) [0|1] "" Vector__XXX
 
+BO_ 2147483779 Speed1: 8 Vector__XXX
+   SG_ Speed1Speed : 37|14@0+ (0.5,0) [0|1] "kph" Vector__XXX
+
+BO_ 2147483687 Unknown027: 8 Vector__XXX
+   SG_ PossibleMAFFreq : 3|12@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ Unknown027Sig3277 : 23|16@0+ (1,-1900) [0|1] "" Vector__XXX
+
+BO_ 2147483793 Constant: 8 Vector__XXX
+
+CM_ SG_ 2147483691 AccelerationLong "Initially_F8_00";
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
 BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
@@ -139,7 +155,7 @@ BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
 BA_DEF_DEF_ "matchingcriteria" 0;
 BA_DEF_DEF_ "filterlabeling" 1;
 BA_DEF_DEF_ "matchingcriteria" 0;
-BA_DEF_DEF_ "filterlabeling" 0;
+BA_DEF_DEF_ "filterlabeling" 1;
 BA_ "GenMsgForegroundColor" BO_ 2147483783 "#000000";
 BA_ "GenMsgForegroundColor" BO_ 2147483769 "#000000";
 VAL_ 881 SwayBar 0 "Disconnected" 1 "Connected" 2 "In_Progress";
