@@ -33,13 +33,11 @@ NS_ :
 
 BS_: 
 BU_: 
-BO_ 792 Steering_Wheel: 8 Vector__XXX
-
 BO_ 133 GearStatus: 8 Vector__XXX
    SG_ GearPosition : 15|8@0+ (1,0) [0|1] "" Vector__XXX
-   SG_ GearStatusSpeed : 39|16@0+ (0.5,0) [0|1] "" Vector__XXX
+   SG_ GearStatusSpeed : 39|16@0+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 139 WheelSpeed: 8 Vector__XXX
+BO_ 139 Unknown: 8 Vector__XXX
    SG_ WheelSpeed1 : 7|16@0+ (1,0) [0|1] "" Vector__XXX
    SG_ WheelSpeed2 : 23|16@0+ (1,0) [0|1] "" Vector__XXX
    SG_ WheelSpeed3 : 39|16@0+ (1,0) [0|1] "" Vector__XXX
@@ -117,9 +115,206 @@ BO_ 2147483687 Unknown027: 8 Vector__XXX
 
 BO_ 2147483793 Constant: 8 Vector__XXX
 
-CM_ SG_ 2147483691 AccelerationLong "Initially_F8_00";
+BO_ 2147483685 Unknown: 8 Vector__XXX
+   SG_ Rpm : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ UnknownRpmRelated : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ UnknownRpmRelated2 : 39|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483695 Unknown: 8 Vector__XXX
+   SG_ UnknownSig339 : 39|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483701 Unknown: 8 Vector__XXX
+   SG_ UnknownSig93 : 7|16@0- (1,0) [0|1] "" Vector__XXX
+   SG_ UnknownSig9343 : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ UnknownSig934314 : 39|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483703 Unknown: 8 Vector__XXX
+   SG_ UnknownSig278 : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ UnknownSig27840 : 39|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483761 Unknown: 8 Vector__XXX
+   SG_ UnknownSig297 : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483767 Unknown: 2 Vector__XXX
+   SG_ UnknownSig234 : 7|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ UnknownSig23428 : 15|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483771 Unknown: 8 Vector__XXX
+   SG_ UnknownSig84 : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ UnknownSig8455 : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ UnknownSig845598 : 39|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483777 Unknown: 8 Vector__XXX
+   SG_ UnknownSig164 : 23|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ UnknownSig16496 : 39|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ UnknownSig1649643 : 47|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483785 Unknown: 8 Vector__XXX
+   SG_ UnknownSig75 : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ UnknownSig7590 : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ UnknownSig759080 : 39|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483797 Unknown: 8 Vector__XXX
+   SG_ UnknownSig456 : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483801 Unknown: 8 Vector__XXX
+   SG_ UnknownSig401 : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483819 Unknown: 8 Vector__XXX
+   SG_ UnknownSig131 : 23|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ UnknownSig13192 : 31|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483821 Transmission: 4 Vector__XXX
+   SG_ TransmissionSig181 : 3|4@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483827 Speed: 8 Vector__XXX
+   SG_ Speed : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ UnknownSig46360 : 39|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483829 Rpm: 8 Vector__XXX
+   SG_ Rpm : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483869 Unknown: 8 Vector__XXX
+   SG_ Distance : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ Distance35 : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483953 ECUCode: 8 Vector__XXX
+
+BO_ 2147483965 Unknown: 8 Vector__XXX
+   SG_ Temperature : 31|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ Unknown : 39|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483971 Empty: 8 Vector__XXX
+
+BO_ 2147483982 Unknown: 8 Vector__XXX
+   SG_ UnknownSig15 : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483989 Empty: 8 Vector__XXX
+
+BO_ 2147483991 Constant: 8 Vector__XXX
+
+BO_ 2147483993 Empty: 8 Vector__XXX
+
+BO_ 2147484096 Constant: 8 Vector__XXX
+
+BO_ 2147484112 Toggle: 8 Vector__XXX
+
+BO_ 2147484117 Constant: 8 Vector__XXX
+
+BO_ 2147484137 Constant: 8 Vector__XXX
+
+BO_ 2147484139 Empty: 8 Vector__XXX
+
+BO_ 2147484150 Constant: 8 Vector__XXX
+
+BO_ 2147484151 Unknown: 8 Vector__XXX
+   SG_ SpeedMPHLowRes : 55|16@0+ (1,0) [0|1] "mph" Vector__XXX
+
+BO_ 2147484208 Temperature: 8 Vector__XXX
+
+BO_ 2147484232 Constant: 8 Vector__XXX
+
+BO_ 2147484277 Constant: 8 Vector__XXX
+
+BO_ 2147484249 StartButton: 8 Vector__XXX
+
+BO_ 2147484257 Counter: 8 Vector__XXX
+
+BO_ 2147484261 Constant: 8 Vector__XXX
+
+BO_ 2147484271 Unknown: 8 Vector__XXX
+   SG_ UnknownSig221 : 31|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147484333 Constant: 8 Vector__XXX
+
+BO_ 2147484338 Constant: 8 Vector__XXX
+
+BO_ 2147484357 Constant: 8 Vector__XXX
+
+BO_ 2147484358 Constant: 8 Vector__XXX
+
+BO_ 2147484359 Constant: 8 Vector__XXX
+
+BO_ 2147484360 Constant: 8 Vector__XXX
+
+BO_ 2147484402 Unknown: 8 Vector__XXX
+   SG_ UnknownSig448 : 55|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147484441 Empty: 8 Vector__XXX
+
+BO_ 2147484442 Empty: 8 Vector__XXX
+
+BO_ 2147484443 Empty: 8 Vector__XXX
+
+BO_ 2147484449 Empty: 8 Vector__XXX
+
+BO_ 2147484450 Empty: 8 Vector__XXX
+
+BO_ 2147484451 Empty: 8 Vector__XXX
+
+BO_ 2147484466 Constant: 8 Vector__XXX
+
+BO_ 2147484467 Constant: 8 Vector__XXX
+
+BO_ 2147484471 Empty: 8 Vector__XXX
+
+BO_ 2147484508 Constant: 6 Vector__XXX
+
+BO_ 2147484534 Constant: 6 Vector__XXX
+
+BO_ 2147484545 Constant: 6 Vector__XXX
+
+BO_ 2147484554 Constant: 6 Vector__XXX
+
+BO_ 2147484557 Constant: 8 Vector__XXX
+
+BO_ 2147484585 Constant: 8 Vector__XXX
+
+BO_ 2147484587 Constant: 8 Vector__XXX
+
+BO_ 2147484595 Constant: 8 Vector__XXX
+
+BO_ 2147484596 Constant: 8 Vector__XXX
+
+BO_ 2147484604 StreetName: 8 Vector__XXX
+
+BO_ 2147484606 Empty: 8 Vector__XXX
+
+BO_ 2147484607 Empty: 8 Vector__XXX
+
+BO_ 2147484610 Constant: 8 Vector__XXX
+
+BO_ 2147484614 Constant: 8 Vector__XXX
+
+BO_ 2147484624 Empty: 8 Vector__XXX
+
+BO_ 2147484627 Constant: 8 Vector__XXX
+
+BO_ 2147484628 Constant: 8 Vector__XXX
+
+BO_ 2147484629 Constant: 8 Vector__XXX
+
+BO_ 2147484630 Constant: 8 Vector__XXX
+
+BO_ 2147484631 Constant: 8 Vector__XXX
+
+BO_ 2147484632 Constant: 8 Vector__XXX
+
+BO_ 2147484641 Constant: 8 Vector__XXX
+
+BO_ 2147484643 Constant: 8 Vector__XXX
+
+CM_ BO_ 139 "transmission";
+CM_ SG_ 2147483701 UnknownSig934314 "park";
+CM_ BO_ 2147483767 "ignition";
+CM_ SG_ 2147483771 UnknownSig84 "perhaps_injector";
+CM_ SG_ 2147483819 UnknownSig131 "gear";
+CM_ SG_ 2147483819 UnknownSig13192 "gear";
+CM_ BO_ 2147484595 "A2FA";
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
 BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
@@ -158,4 +353,8 @@ BA_DEF_DEF_ "matchingcriteria" 0;
 BA_DEF_DEF_ "filterlabeling" 1;
 BA_ "GenMsgForegroundColor" BO_ 2147483783 "#000000";
 BA_ "GenMsgForegroundColor" BO_ 2147483769 "#000000";
+BA_ "GenMsgForegroundColor" BO_ 2147483695 "#000000";
+BA_ "GenMsgForegroundColor" BO_ 2147483761 "#000000";
+BA_ "GenMsgForegroundColor" BO_ 2147484112 "#000000";
 VAL_ 881 SwayBar 0 "Disconnected" 1 "Connected" 2 "In_Progress";
+VAL_ 2147483821 TransmissionSig181 1 "Park" 4 "Drive";
