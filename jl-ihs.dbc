@@ -33,10 +33,10 @@ NS_ :
 
 BS_: 
 BU_: 
-BO_ 706 Aux_Battery: 4 Vector__XXX
-   SG_ Aux_Battery_Voltage : 23|8@0+ (0.1,0) [0|1] "" Vector__XXX
+BO_ 706 Battery: 4 Vector__XXX
+   SG_ Battery_Voltage : 23|8@0+ (0.1,0) [0|1] "" Vector__XXX
 
-BO_ 792 Steering_Wheel: 8 Vector__XXX
+BO_ 792 Constant: 8 Vector__XXX
 
 BO_ 826 Cabin_Temp: 8 Vector__XXX
    SG_ Interior_Temp : 7|16@0+ (0.01,-40) [0|1] "C" Vector__XXX
@@ -79,13 +79,48 @@ BO_ 802 RpmSpeed: 8 Vector__XXX
    SG_ Rpm : 7|16@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 778 Temperatures: 8 Vector__XXX
-   SG_ Temperatures1 : 7|32@2- (1,0) [0|1] "" Vector__XXX
-   SG_ TemperaturesSig37218 : 39|32@2- (1,0) [0|1] "" Vector__XXX
+   SG_ Temperatures1 : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ TemperaturesSig37218 : 39|32@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147484205 SteeringButtons: 8 Vector__XXX
 
+BO_ 2147483938 IgnitionOrEngineRun: 4 Vector__XXX
+
+BO_ 2147483947 IgnOrEngineRunStatus: 1 Vector__XXX
+
+BO_ 2147484096 Constant: 1 Vector__XXX
+
+BO_ 2147484104 Constant: 8 Vector__XXX
+
+BO_ 2147484207 IgnOrRunStatus: 1 Vector__XXX
+
+BO_ 2147484208 Temperature: 8 Vector__XXX
+
+BO_ 2147484210 Unknown: 8 Vector__XXX
+
+BO_ 2147484227 Empty: 6 Vector__XXX
+
+BO_ 2147484275 Empty: 6 Vector__XXX
+
+BO_ 2147484355 Unknown: 4 Vector__XXX
+
+BO_ 2147484372 Empty: 8 Vector__XXX
+
+BO_ 2147484466 TransmissionPosition: 8 Vector__XXX
+   SG_ TransmissionPositionSig219 : 15|8@4- (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147484504 Transmission: 4 Vector__XXX
+
+BO_ 2147484506 WiFi: 8 Vector__XXX
+   SG_ WiFiSig167 : 7|56@4- (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147484604 StreetName: 8 Vector__XXX
+
+CM_ BO_ 2147484104 "00 00 00 08";
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
 BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
