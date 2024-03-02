@@ -57,7 +57,10 @@ BO_ 992 VIN: 8 Vector__XXX
    SG_ VIN_MsgNo : 7|8@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 881 SwayBar: 8 Vector__XXX
-   SG_ SwayBar : 1|2@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ SwayBarDisconnected : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ SwayBarInProgress : 9|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ SwayBarLocked : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ SwayBarPosition : 7|4@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 848 DateTime: 8 Vector__XXX
    SG_ DateTimeSeconds : 7|8@0+ (1,0) [0|1] "" Vector__XXX
@@ -87,15 +90,15 @@ BO_ 2147484031 GPSSpeed: 8 Vector__XXX
    SG_ GPSSpeed : 55|16@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147483683 SteeringWheel: 8 Vector__XXX
-   SG_ SteeringWheelAngle : 7|16@0+ (1,-4096) [0|1] "" Vector__XXX
-   SG_ SteeringWheelTorque : 23|16@0+ (1,-4096) [0|1] "" Vector__XXX
+   SG_ WheelAngle : 7|16@0+ (0.0350877,-144) [0|1] "degrees" Vector__XXX
+   SG_ SteeringWheeRateOfChange : 23|16@0+ (1,-4096) [0|1] "" Vector__XXX
 
 BO_ 2147484556 DateTime2: 8 Vector__XXX
    SG_ DateTime2Seconds : 63|8@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147483691 Accelerometer: 8 Vector__XXX
-   SG_ AccelerationLong : 7|16@0+ (1,-2048) [0|1] "" Vector__XXX
-   SG_ AccelerationLat : 23|16@0+ (1,-2048) [0|1] "" Vector__XXX
+   SG_ AccelerationLat : 7|16@0+ (1,-2048) [0|1] "" Vector__XXX
+   SG_ AccelerationLong : 23|16@0+ (1,-2048) [0|1] "" Vector__XXX
    SG_ YawRate : 39|16@0+ (1,-2048) [0|1] "" Vector__XXX
 
 BO_ 2147483783 Brake: 8 Vector__XXX
@@ -224,6 +227,7 @@ BO_ 2147484261 Constant: 8 Vector__XXX
 
 BO_ 2147484271 Unknown: 8 Vector__XXX
    SG_ UnknownSig221 : 31|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ SwayBarRequest : 14|1@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147484333 Constant: 8 Vector__XXX
 
@@ -260,7 +264,10 @@ BO_ 2147484471 Empty: 8 Vector__XXX
 
 BO_ 2147484508 Constant: 6 Vector__XXX
 
-BO_ 2147484534 Constant: 6 Vector__XXX
+BO_ 2147484534 NaviFlags: 6 Vector__XXX
+   SG_ Flags : 23|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ ConstantSig9955 : 31|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ ConstantSig995570 : 47|8@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147484545 Constant: 6 Vector__XXX
 
@@ -277,6 +284,10 @@ BO_ 2147484595 Constant: 8 Vector__XXX
 BO_ 2147484596 Constant: 8 Vector__XXX
 
 BO_ 2147484604 StreetName: 8 Vector__XXX
+   SG_ LineNumber : 7|4@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ MessageType : 11|4@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ MessageStartFlag : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ MessageData : 31|40@4- (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147484606 Empty: 8 Vector__XXX
 
@@ -304,15 +315,21 @@ BO_ 2147484641 Constant: 8 Vector__XXX
 
 BO_ 2147484643 Constant: 8 Vector__XXX
 
+BO_ 2147485664 PowertrainModuleTx: 8 Vector__XXX
+
+BO_ 2147485672 PowertrainModuleRx: 8 Vector__XXX
+
 CM_ BO_ 139 "transmission";
-CM_ SG_ 2147483701 UnknownSig934314 "park";
-CM_ BO_ 2147483767 "ignition";
-CM_ SG_ 2147483771 UnknownSig84 "perhaps_injector";
-CM_ SG_ 2147483819 UnknownSig131 "gear";
-CM_ SG_ 2147483819 UnknownSig13192 "gear";
-CM_ BO_ 2147484595 "A2FA";
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
 BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
@@ -356,5 +373,5 @@ BA_ "GenMsgForegroundColor" BO_ 2147483769 "#000000";
 BA_ "GenMsgForegroundColor" BO_ 2147483695 "#000000";
 BA_ "GenMsgForegroundColor" BO_ 2147483761 "#000000";
 BA_ "GenMsgForegroundColor" BO_ 2147484112 "#000000";
-VAL_ 881 SwayBar 0 "Disconnected" 1 "Connected" 2 "In_Progress";
+BA_ "GenMsgForegroundColor" BO_ 2147484534 "#000000";
 VAL_ 2147483821 TransmissionSig181 1 "Park" 4 "Drive";
