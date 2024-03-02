@@ -116,9 +116,18 @@ BO_ 2147484506 WiFi: 8 Vector__XXX
 
 BO_ 2147484604 StreetName: 8 Vector__XXX
 
-CM_ BO_ 2147484104 "00 00 00 08";
+BO_ 2147485631 RadioModuleRx: 8 Vector__XXX
+
+BO_ 2147485514 SwayBarModuleRx: 8 Vector__XXX
+
+BO_ 2147484991 RadioModuleTx: 8 Vector__XXX
+
+BO_ 2147484874 SwayBarModuleTx: 8 Vector__XXX
+
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
 BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
@@ -146,5 +155,7 @@ BA_DEF_DEF_ "filterlabeling" 1;
 BA_DEF_DEF_ "matchingcriteria" 0;
 BA_DEF_DEF_ "filterlabeling" 1;
 BA_ "GenMsgForegroundColor" BO_ 826 "#000000";
+BA_ "GenMsgForegroundColor" BO_ 2147485631 "#00aa00";
+BA_ "GenMsgForegroundColor" BO_ 2147484991 "#00aa7f";
 VAL_ 832 Gear 61 "Park" 0 "No Description";
 VAL_ 832 Gear70 61 "Park" 0 "No Description";
