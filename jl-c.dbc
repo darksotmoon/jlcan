@@ -138,9 +138,9 @@ BO_ 2147483703 Unknown: 8 Vector__XXX
 BO_ 2147483761 Unknown: 8 Vector__XXX
    SG_ UnknownSig297 : 7|16@0+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 2147483767 Unknown: 2 Vector__XXX
-   SG_ UnknownSig234 : 7|8@0+ (1,0) [0|1] "" Vector__XXX
-   SG_ UnknownSig23428 : 15|8@0+ (1,0) [0|1] "" Vector__XXX
+BO_ 2147483767 IgnitionStatus: 2 Vector__XXX
+   SG_ IgnitionSwitch : 7|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ IgnitionState : 15|8@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147483771 Unknown: 8 Vector__XXX
    SG_ UnknownSig84 : 7|16@0+ (1,0) [0|1] "" Vector__XXX
@@ -177,9 +177,9 @@ BO_ 2147483827 Speed: 8 Vector__XXX
 BO_ 2147483829 Rpm: 8 Vector__XXX
    SG_ Rpm : 23|16@0+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 2147483869 Unknown: 8 Vector__XXX
-   SG_ Distance : 7|16@0+ (1,0) [0|1] "" Vector__XXX
-   SG_ Distance35 : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+BO_ 2147483869 AxleDistance: 8 Vector__XXX
+   SG_ DistanceFrontAxle : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ DistanceRearAxle : 23|16@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147483953 ECUCode: 8 Vector__XXX
 
@@ -225,7 +225,7 @@ BO_ 2147484257 Counter: 8 Vector__XXX
 
 BO_ 2147484261 Constant: 8 Vector__XXX
 
-BO_ 2147484271 Unknown: 8 Vector__XXX
+BO_ 2147484271 SwayBarRequest: 8 Vector__XXX
    SG_ UnknownSig221 : 31|16@0+ (1,0) [0|1] "" Vector__XXX
    SG_ SwayBarRequest : 14|1@0+ (1,0) [0|1] "" Vector__XXX
 
@@ -265,9 +265,10 @@ BO_ 2147484471 Empty: 8 Vector__XXX
 BO_ 2147484508 Constant: 6 Vector__XXX
 
 BO_ 2147484534 NaviFlags: 6 Vector__XXX
-   SG_ Flags : 23|8@0+ (1,0) [0|1] "" Vector__XXX
-   SG_ ConstantSig9955 : 31|16@0+ (1,0) [0|1] "" Vector__XXX
-   SG_ ConstantSig995570 : 47|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ Flag1 : 23|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ NextTurnDistance : 31|16@0+ (0.1,0) [0|1] "" Vector__XXX
+   SG_ Flag2 : 43|4@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ Flag3 : 55|4@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147484545 Constant: 6 Vector__XXX
 
@@ -315,13 +316,110 @@ BO_ 2147484641 Constant: 8 Vector__XXX
 
 BO_ 2147484643 Constant: 8 Vector__XXX
 
-BO_ 2147485664 PowertrainModuleTx: 8 Vector__XXX
+BO_ 2147485664 PowertrainModuleRx: 8 Vector__XXX
 
-BO_ 2147485672 PowertrainModuleRx: 8 Vector__XXX
+BO_ 2147485672 PowertrainModuleTx: 8 Vector__XXX
+
+BO_ 2147484253 AxleLocker: 8 Vector__XXX
+   SG_ AxleLockerRequest : 6|2@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147484279 TransferCase: 8 Vector__XXX
+   SG_ TransferCasePosition : 7|4@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ TransferCaseNeutral : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ FrontAxleConnected : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147484440 SteeringWheelButtons: 8 Vector__XXX
+
+BO_ 2147485515 DriveTrainModuleTx: 8 Vector__XXX
+
+BO_ 2147485511 ABSModuleTx: 8 Vector__XXX
+
+BO_ 2147484875 DriveTrainModuleRx: 8 Vector__XXX
+
+BO_ 2147484871 ABSModuleRx: 8 Vector__XXX
+
+BO_ 2147484110 KeyFob: 8 Vector__XXX
+   SG_ KeyFobSignal : 7|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483803 Interiror: 8 Vector__XXX
+   SG_ DriverDoorClosed : 42|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483941 TransTemp: 8 Vector__XXX
+   SG_ TransTemp : 15|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147485216 BCMTx: 8 Vector__XXX
+
+BO_ 2147484932 BCMRx: 8 Vector__XXX
+
+BO_ 2147485504 RFHubTx: 8 Vector__XXX
+
+BO_ 2147484864 RfHubRx: 8 Vector__XXX
+
+BO_ 2147484866 IPPanelRx: 8 Vector__XXX
+
+BO_ 2147484867 TPMSRx: 8 Vector__XXX
+
+BO_ 2147484868 AirbagsRx: 8 Vector__XXX
+
+BO_ 2147484873 ShifterRx: 8 Vector__XXX
+
+BO_ 2147484881 DriverPresenceRx: 8 Vector__XXX
+
+BO_ 2147484883 ACCRx: 8 Vector__XXX
+
+BO_ 2147484890 EPSRx: 8 Vector__XXX
+
+BO_ 2147484898 ParkAssistRx: 8 Vector__XXX
+
+BO_ 2147484899 SteeringColumnRx: 8 Vector__XXX
+
+BO_ 2147484971 AssistanceRx: 8 Vector__XXX
+
+BO_ 2147484988 CenterStackRx: 8 Vector__XXX
+
+BO_ 2147485665 TCMRx: 8 Vector__XXX
+
+BO_ 2147485673 TCMTx: 8 Vector__XXX
+
+BO_ 2147485628 CenterStackTx: 8 Vector__XXX
+
+BO_ 2147485611 AssistanceTx: 8 Vector__XXX
+
+BO_ 2147485506 IPPanelTx: 8 Vector__XXX
+
+BO_ 2147485507 TPMSTx: 8 Vector__XXX
+
+BO_ 2147485508 AirbagsTx: 8 Vector__XXX
+
+BO_ 2147485513 ShifterTx: 8 Vector__XXX
+
+BO_ 2147485521 DriverPresenceTx: 8 Vector__XXX
+
+BO_ 2147485523 ACCTx: 8 Vector__XXX
+
+BO_ 2147485530 EPSTx: 8 Vector__XXX
+
+BO_ 2147485538 ParkAssistTx: 8 Vector__XXX
+
+BO_ 2147485539 SteeringColumnTx: 8 Vector__XXX
 
 CM_ BO_ 139 "transmission";
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
 BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
@@ -368,10 +466,14 @@ BA_DEF_DEF_ "matchingcriteria" 0;
 BA_DEF_DEF_ "filterlabeling" 1;
 BA_DEF_DEF_ "matchingcriteria" 0;
 BA_DEF_DEF_ "filterlabeling" 1;
+BA_ "GenMsgBackgroundColor" BO_ 808 "#55ff7f";
 BA_ "GenMsgForegroundColor" BO_ 2147483783 "#000000";
 BA_ "GenMsgForegroundColor" BO_ 2147483769 "#000000";
 BA_ "GenMsgForegroundColor" BO_ 2147483695 "#000000";
 BA_ "GenMsgForegroundColor" BO_ 2147483761 "#000000";
+BA_ "GenMsgForegroundColor" BO_ 2147483767 "#000000";
 BA_ "GenMsgForegroundColor" BO_ 2147484112 "#000000";
 BA_ "GenMsgForegroundColor" BO_ 2147484534 "#000000";
+BA_ "GenMsgForegroundColor" BO_ 2147483803 "#000000";
+BA_ "GenMsgForegroundColor" BO_ 2147483941 "#000000";
 VAL_ 2147483821 TransmissionSig181 1 "Park" 4 "Drive";
