@@ -36,7 +36,7 @@ BU_:
 BO_ 706 Battery: 4 Vector__XXX
    SG_ Battery_Voltage : 23|8@0+ (0.1,0) [0|1] "" Vector__XXX
 
-BO_ 792 Constant: 8 Vector__XXX
+BO_ 792 SteeringWheelButtons: 8 Vector__XXX
 
 BO_ 826 Cabin_Temp: 8 Vector__XXX
    SG_ Interior_Temp : 7|16@0+ (0.01,-40) [0|1] "C" Vector__XXX
@@ -97,6 +97,7 @@ BO_ 2147484207 IgnOrRunStatus: 1 Vector__XXX
 BO_ 2147484208 Temperature: 8 Vector__XXX
 
 BO_ 2147484210 Unknown: 8 Vector__XXX
+   SG_ TransTemp : 15|8@0+ (1,-40) [0|1] "" Vector__XXX
 
 BO_ 2147484227 Empty: 6 Vector__XXX
 
@@ -116,16 +117,72 @@ BO_ 2147484506 WiFi: 8 Vector__XXX
 
 BO_ 2147484604 StreetName: 8 Vector__XXX
 
-BO_ 2147485631 RadioModuleRx: 8 Vector__XXX
+BO_ 2147484508 NaviInfo2: 6 Vector__XXX
+   SG_ NaviDistance : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ NaviFlag1 : 24|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ NaviFlag2 : 23|8@0+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 2147485514 SwayBarModuleRx: 8 Vector__XXX
+BO_ 2147485631 RadioModuleTx: 8 Vector__XXX
 
-BO_ 2147484991 RadioModuleTx: 8 Vector__XXX
+BO_ 2147485514 SwayBarModuleTx: 8 Vector__XXX
 
-BO_ 2147484874 SwayBarModuleTx: 8 Vector__XXX
+BO_ 2147484991 RadioModuleRx: 8 Vector__XXX
+
+BO_ 2147484874 SwayBarModuleRx: 8 Vector__XXX
+
+BO_ 2147484371 ConsoleButtons: 8 Vector__XXX
+   SG_ TractionControlButton : 56|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ ESSButton : 15|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147484410 DoorsAndInterior: 8 Vector__XXX
+   SG_ DriverDoorOpen : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147485586 UnknownModuleTx: 8 Vector__XXX
+
+BO_ 2147484946 UnknownModuleRx: 8 Vector__XXX
+
+BO_ 2147485167 UnknownModule: 8 Vector__XXX
+
+BO_ 2147485630 AmplifierTx: 8 Vector__XXX
+
+BO_ 2147485593 RightBlindSpotTx: 8 Vector__XXX
+
+BO_ 2147485588 VisionModuleTx: 8 Vector__XXX
+
+BO_ 2147485585 LeftBlindSpotTx: 8 Vector__XXX
+
+BO_ 2147485571 HVACModuleTx: 8 Vector__XXX
+
+BO_ 2147484990 AmplifierRx: 8 Vector__XXX
+
+BO_ 2147484953 RightBlindSpotRx: 8 Vector__XXX
+
+BO_ 2147484945 LeftBlindSpotRx: 8 Vector__XXX
+
+BO_ 2147484948 VisionModuleRx: 8 Vector__XXX
+
+BO_ 2147484931 HVACModuleRx: 8 Vector__XXX
 
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
 BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
@@ -155,6 +212,7 @@ BA_DEF_DEF_ "filterlabeling" 1;
 BA_DEF_DEF_ "matchingcriteria" 0;
 BA_DEF_DEF_ "filterlabeling" 1;
 BA_ "GenMsgForegroundColor" BO_ 826 "#000000";
+BA_ "GenMsgBackgroundColor" BO_ 808 "#ffff7f";
 BA_ "GenMsgForegroundColor" BO_ 2147485631 "#00aa00";
 BA_ "GenMsgForegroundColor" BO_ 2147484991 "#00aa7f";
 VAL_ 832 Gear 61 "Park" 0 "No Description";
